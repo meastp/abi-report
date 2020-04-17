@@ -1,4 +1,4 @@
-FROM ubuntu:18.10
+FROM ubuntu:19.10
    
 RUN apt-get update && apt-get install -y \
   powershell \
@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
   abi-compliance-checker \
   git \
   cmake \
-  build-essentials
+  build-essential
