@@ -1,11 +1,12 @@
 FROM ubuntu:19.10
 
 # build, install universal-ctags
-RUN  git clone http://github.com/universal-ctags/ctags.git ~/ctags && \
-  cd ~/ctags && \
+RUN git clone https://github.com/universal-ctags/ctags.git && \
+  cd ctags && \
   ./autogen.sh && \
-  ./configure --program-prefix=u && \
-  make && make install && \
+  ./configure && \
+  make && \
+  make install
 
 RUN apt-get update && apt-get install -y \
   libboost-all-dev \
