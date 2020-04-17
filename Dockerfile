@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
   abi-compliance-checker \
   git \
   cmake \
-  build-essential
+  build-essential \
+  pkg-config
   
 # build, install universal-ctags
 RUN git clone https://github.com/universal-ctags/ctags.git && \
