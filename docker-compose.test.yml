@@ -1,3 +1,5 @@
-sut:
-  build: .
-  command: abi-compliance-checker -test
+version: '3.0'
+services:
+  sut:
+    build: .
+    command: abi-compliance-checker -test
